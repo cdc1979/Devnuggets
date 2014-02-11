@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>https://github.com/cdc1979/Devnuggets</licenseUrl>
+    <projectUrl>https://github.com/cdc1979/Devnuggets</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <summary>The DevNuggest toolkit is a collection of tools for simplifying development. MVC HTML Helper Classes, SQL Helper Classes, Useful Functions.  See GitHub for full list and samples.</summary>
+    <releaseNotes>Beta - Not For Production Use</releaseNotes>
+    <copyright>Copyright 2014</copyright>
+    <tags>Toolkit HtmlHelper Mvc MvcHelper CDN SQLHelper MySQL</tags>
+  </metadata>
+</package>
