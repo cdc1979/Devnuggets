@@ -1,7 +1,6 @@
-﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Devnuggets.Toolkit", "Package\Devnuggets.Toolkit.csproj", "{93FBEB5E-81E8-4938-AFFA-24CD10DAD5E3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Devnuggets.Toolkit", "Devnuggets.Toolkit\Devnuggets.Toolkit.csproj", "{93FBEB5E-81E8-4938-AFFA-24CD10DAD5E3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Devnuggets.Toolkit.Data", "Devnuggets.Toolkit.Data\Devnuggets.Toolkit.Data.csproj", "{649F0439-9B38-4771-AA58-A170425680FE}"
 EndProject
