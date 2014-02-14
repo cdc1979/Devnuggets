@@ -6,6 +6,19 @@ Install-Package Devnuggets.Toolkit -Version 1.0.0
 
 Examples
 
+##MongoDB Helper
+
+- CopyCollection
+- Compact Collection
+- Create Indexes
+
+<pre>
+using (MongoConnection m = new MongoConnection("mydatabase", new MongoConnectionStringFromWebConfig()))
+{
+    Console.WriteLine(m.GetStats());
+}
+</pre>
+
 ###CDN Helper
 Outputs script tags for loading common libraries e.g. jquery/bootstrap from CDN.
 Can select preferred CDN source (will revert to whatever is available if one CDN doesnt host the file)

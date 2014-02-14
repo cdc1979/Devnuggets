@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MongoDB.Driver;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 namespace Devnuggets.Toolkit.MongoDb
 {
     public class MongoConnection : IDisposable
@@ -45,9 +46,9 @@ namespace Devnuggets.Toolkit.MongoDb
             return _db.RunCommand(new CommandDocument("compact", collectionname));
         }
 
-        public DatabaseStatsResult GetStats()
+        public string GetStats()
         {
-            return _db.GetStats();
+            return JsonConvert.SerializeObject(_db.GetStats());
         }
 
         public CollectionStatsResult GetStats(string collectionName)
