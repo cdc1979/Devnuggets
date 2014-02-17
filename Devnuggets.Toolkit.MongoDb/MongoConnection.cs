@@ -22,9 +22,9 @@ namespace Devnuggets.Toolkit.MongoDb
             _db = _server.GetDatabase(databaseName);
         }
 
-        public bool CreateIndex(string collection, string[] fieldnames)
+        public bool CreateIndex(string collection, string[] keynames)
         {
-            _db.GetCollection(collection).EnsureIndex(fieldnames);
+            _db.GetCollection(collection).EnsureIndex(keynames);
             return true;
         }
 
@@ -38,6 +38,16 @@ namespace Devnuggets.Toolkit.MongoDb
             var dest = _db.GetCollection(destinationCollection);
             dest.InsertBatch(source.FindAll());
             return true;
+        }
+
+        public List<CommandResult> CompactCollections(string[] collectionnames)
+        {
+            List<CommandResult> r = new List<CommandResult>();
+            foreach (string s in collectionnames)
+            {
+                r.Add(CompactCollection(s));
+            }
+            return r;
         }
 
         public CommandResult CompactCollection(string collectionname)

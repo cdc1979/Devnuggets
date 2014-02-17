@@ -19,7 +19,7 @@ namespace Devnuggets.Toolkit.Mvc
     }
 
     public enum ResourceType { CSS, JS }
-    public enum CdnSourceType { MICROSOFT_AJAX,GOOGLE,BOOTSTRAPCDN }
+    public enum CdnSourceType { MICROSOFT_AJAX,GOOGLE,BOOTSTRAPCDN, CDNJS }
 
     public static class CdnHelper
     {
@@ -30,8 +30,9 @@ namespace Devnuggets.Toolkit.Mvc
             /*CSS*/
             resources.Add(new CdnResource() { Key = "jqueryui", Minified = true, resourceType = ResourceType.CSS, CdnSource = CdnSourceType.MICROSOFT_AJAX, Url = "http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/themes/smoothness/jquery-ui.css", LoadSequence = 1 });
             resources.Add(new CdnResource() { Key = "bootstrap", Minified = false, resourceType = ResourceType.CSS, CdnSource = CdnSourceType.MICROSOFT_AJAX, Url = "http://ajax.aspnetcdn.com/ajax/bootstrap/3.1.0/css/bootstrap.min.css", LoadSequence = 0 });
-            resources.Add(new CdnResource() { Key = "fontawesome", Minified = false, resourceType = ResourceType.CSS, CdnSource = CdnSourceType.MICROSOFT_AJAX, Url = "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css", LoadSequence = 0 });
             resources.Add(new CdnResource() { Key = "datatables", Minified = true, resourceType = ResourceType.CSS, CdnSource = CdnSourceType.MICROSOFT_AJAX, Url = "http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css", LoadSequence = 0 });
+            resources.Add(new CdnResource() { Key = "fontawesome", Minified = false, resourceType = ResourceType.CSS, CdnSource = CdnSourceType.BOOTSTRAPCDN, Url = "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css", LoadSequence = 0 });
+            resources.Add(new CdnResource() { Key = "bootstrap", Minified = true, resourceType = ResourceType.CSS, CdnSource = CdnSourceType.BOOTSTRAPCDN, Url = "//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css", LoadSequence = 0 });
             /*JS*/
             resources.Add(new CdnResource() { Key = "jquery", Minified = true, resourceType = ResourceType.JS, CdnSource =  CdnSourceType.MICROSOFT_AJAX, Url = "http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.0.min.js", LoadSequence = 1 });
             resources.Add(new CdnResource() { Key = "jquery", Minified = true, resourceType = ResourceType.JS, CdnSource = CdnSourceType.GOOGLE, Url = "//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js", LoadSequence = 1 });
@@ -45,6 +46,11 @@ namespace Devnuggets.Toolkit.Mvc
             resources.Add(new CdnResource() { Key = "dojo", Minified = true, resourceType = ResourceType.JS, CdnSource = CdnSourceType.MICROSOFT_AJAX, Url = "//ajax.googleapis.com/ajax/libs/dojo/1.9.2/dojo/dojo.js", LoadSequence = 4 });
             resources.Add(new CdnResource() { Key = "mootools", Minified = true, resourceType = ResourceType.JS, CdnSource = CdnSourceType.MICROSOFT_AJAX, Url = "//ajax.googleapis.com/ajax/libs/mootools/1.4.5/mootools-yui-compressed.js", LoadSequence = 4 });
             resources.Add(new CdnResource() { Key = "prototype", Minified = true, resourceType = ResourceType.JS, CdnSource = CdnSourceType.MICROSOFT_AJAX, Url = "//ajax.googleapis.com/ajax/libs/prototype/1.7.1.0/prototype.js", LoadSequence = 4 });
+            resources.Add(new CdnResource() { Key = "bootstrap", Minified = true, resourceType = ResourceType.JS, CdnSource = CdnSourceType.BOOTSTRAPCDN, Url = "//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js", LoadSequence = 0 });
+
+            resources.Add(new CdnResource() { Key = "dropzone", Minified = true, resourceType = ResourceType.CSS, CdnSource = CdnSourceType.CDNJS, Url = "//cdnjs.cloudflare.com/ajax/libs/dropzone/3.8.2/css/dropzone.css", LoadSequence = 7 });
+            resources.Add(new CdnResource() { Key = "dropzone", Minified = true, resourceType = ResourceType.JS, CdnSource = CdnSourceType.CDNJS, Url = "//cdnjs.cloudflare.com/ajax/libs/dropzone/3.8.2/dropzone.min.js", LoadSequence = 7 });
+            resources.Add(new CdnResource() { Key = "knockoutmapping", Minified = true, resourceType = ResourceType.JS, CdnSource = CdnSourceType.CDNJS, Url = "//cdnjs.cloudflare.com/ajax/libs/knockout.mapping/2.4.1/knockout.mapping.min.js", LoadSequence = 7 });
 
             return resources;
         }

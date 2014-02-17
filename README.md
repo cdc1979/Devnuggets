@@ -1,12 +1,16 @@
 #Devnuggets Toolkit
 
-This toolkit is a collection of helper libraries for performing common tasks in a C#.NET/MVC project.  You can install from nuget using 
+This toolkit is a collection of helper libraries for performing common tasks in a C#.NET/MVC project.
 
-Install-Package Devnuggets.Toolkit -Version 1.0.0
+You can install from nuget using:
+
+Install-Package Devnuggets.Toolkit -Version 1.0.1
 
 Examples
 
-##MongoDB Helper
+Checkout the Devnuggets.Test project for some sample code.
+
+###MongoDB Helper
 
 - CopyCollection
 - Compact Collection
