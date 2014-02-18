@@ -4,11 +4,15 @@ This toolkit is a collection of helper libraries for performing common tasks in 
 
 You can install from nuget using:
 
-Install-Package Devnuggets.Toolkit -Version 1.0.1
+Install-Package Devnuggets.Toolkit -Version 1.0.2
 
 Examples
 
 Checkout the Devnuggets.Test project for some sample code.
+
+###SQL/MYSQL Helpers
+
+Simple classes for executing Raw SQL, and querying using DataSets.
 
 ###MongoDB Helper
 
