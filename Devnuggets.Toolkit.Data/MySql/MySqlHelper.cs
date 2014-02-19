@@ -9,7 +9,7 @@ using MySql.Data.MySqlClient;
 
 namespace Devnuggets.Toolkit.Data.MySql
 {
-    public class MySqlHelper
+    public class MySqlHelper : IDisposable
     {
         public string ConnectionString { get; set; }
 

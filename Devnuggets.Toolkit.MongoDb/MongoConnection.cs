@@ -22,6 +22,11 @@ namespace Devnuggets.Toolkit.MongoDb
             _db = _server.GetDatabase(databaseName);
         }
 
+        public MongoDatabase GetDbContext()
+        {
+            return _db;
+        }
+
         public bool CreateIndex(string collection, string[] keynames)
         {
             _db.GetCollection(collection).EnsureIndex(keynames);

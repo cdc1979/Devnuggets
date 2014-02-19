@@ -47,6 +47,10 @@
       <Project>{649f0439-9b38-4771-aa58-a170425680fe}</Project>
       <Name>Devnuggets.Toolkit.Data</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Devnuggets.Toolkit.MongoDb\Devnuggets.Toolkit.MongoDb.csproj">
+      <Project>{6338c2af-e68b-4aaa-80f7-7f8260c0e1f5}</Project>
+      <Name>Devnuggets.Toolkit.MongoDb</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Devnuggets.Toolkit.Mvc\Devnuggets.Toolkit.Mvc.csproj">
       <Project>{921b8493-b1d1-4c7e-ab57-e5ac890b8486}</Project>
       <Name>Devnuggets.Toolkit.Mvc</Name>

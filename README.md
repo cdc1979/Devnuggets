@@ -4,7 +4,7 @@ This toolkit is a collection of helper libraries for performing common tasks in 
 
 You can install from nuget using:
 
-Install-Package Devnuggets.Toolkit -Version 1.0.2
+Install-Package Devnuggets.Toolkit -Version 1.0.5
 
 Examples
 
@@ -16,9 +16,10 @@ Simple classes for executing Raw SQL, and querying using DataSets.
 
 ###MongoDB Helper
 
-- CopyCollection
-- Compact Collection
-- Create Indexes
+- CopyCollection(s)
+- Compact Collection(s)
+- Create Indexes(s)
+- Access Collections
 
 <pre>
 using (MongoConnection m = new MongoConnection("mydatabase", new MongoConnectionStringFromWebConfig()))
