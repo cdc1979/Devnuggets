@@ -14,6 +14,19 @@ Checkout the Devnuggets.Test project for some sample code.
 
 Simple classes for executing Raw SQL, and querying using DataSets.
 
+MySQL Example:
+
+<pre>
+using (MySqlHelper m = new MySqlHelper(ConfigurationManager.AppSettings["mysql.connectionstring"]))
+{
+    string sql = "SELECT * FROM myTable";
+    DataTable dt = m.GetDataset(sql).Tables[0];
+    foreach (DataRow r in dt.Rows)
+    {
+	}
+}
+</pre>
+
 ###MongoDB Helper
 
 - CopyCollection(s)
