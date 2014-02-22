@@ -1,0 +1,20 @@
+﻿@using Devnuggets.Toolkit.Mvc
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/_LayoutPage1.cshtml";
+}
+
+<h2>CDN MVC Helper</h2>
+<p>Generate all of your required Javascript/CSS framework links in a single line of code, all served from your favourite CDN. </p>
+
+<h3>This</h3>
+
+<pre>
+    &#64;Html.AddCdn( new List<string>() {"jquery","bootstrap","knockout"}, CdnSourceType.MICROSOFT_AJAX  )
+</pre>
+
+<h3>Becomes</h3>
+
+@Html.Encode(Html.AddCdn( new List<string>() {"jquery","bootstrap","knockout"}, CdnSourceType.MICROSOFT_AJAX  ))
+
+

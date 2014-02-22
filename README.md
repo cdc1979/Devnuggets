@@ -8,7 +8,16 @@ Install-Package Devnuggets.Toolkit -Version 1.0.5
 
 Examples
 
-Checkout the Devnuggets.Test project for some sample code.
+Checkout the Devnuggets.Samples project for some sample code.
+
+###Twitter Bootstrap Helpers
+
+-Render List of POCO Objects to Table, inject buttons
+
+<pre>
+@Html.TableBuilder(Model, new TableOptions() { TableStyle = SetTableStyle.STRIPED, TableHover = SetTableHover.HOVER })
+</pre>
+
 
 ###SQL/MYSQL Helpers
 
@@ -28,6 +37,9 @@ using (MySqlHelper m = new MySqlHelper(ConfigurationManager.AppSettings["mysql.c
 </pre>
 
 ###MongoDB Helper
+
+The mongodb helper is designed to simplify common tasks into one or two lines of code.  This is handy
+when needing to ensure lots of indexes are created, or to perform many automated admin tasks.
 
 - CopyCollection(s)
 - Compact Collection(s)

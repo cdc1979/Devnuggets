@@ -1,0 +1,15 @@
+﻿@using Devnuggets.Toolkit.Mvc.AntiRobot
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/_LayoutPage1.cshtml";
+}
+
+
+<h2>Anti Robot</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.TextBox("Test");
+    <button>Submit</button>
+    @Html.AntiRobot()
+}

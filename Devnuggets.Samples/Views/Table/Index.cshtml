@@ -1,0 +1,36 @@
+﻿@using Devnuggets.Samples.Models
+@using Devnuggets.Toolkit.Mvc
+@model List<Customer>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/_LayoutPage1.cshtml";
+}
+
+<h2>Bootstrap Table Example</h2>
+
+Source object:
+<pre>
+    public class Customer
+    {
+        public string Id { get; set; }
+        [Display(Name = "Customer Name")]
+        public string CustomerName { get; set; }
+        public string CustomerEmail { get; set; }
+        public string CustomerTel { get; set; }
+    }
+</pre>
+
+<div>
+<h4>Standard Example - Render All Properties as Columns</h4>
+@Html.TableBuilder(Model)
+</div>
+
+<div>
+<h4>Standard Example - Add Styles</h4>
+@Html.TableBuilder(Model, new TableOptions() { TableStyle = SetTableStyle.STRIPED, TableHover = SetTableHover.HOVER })
+</div>
+
+<div>
+<h4>Enclose In Panel</h4>
+@Html.TableBuilder(Model, new TableOptions() { TableStyle = SetTableStyle.STRIPED, TableHover = SetTableHover.HOVER, EncloseWithPanel = RenderWithPanel.INFO, TableTitle = "My Customers" })
+</div>

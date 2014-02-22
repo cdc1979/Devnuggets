@@ -1,0 +1,60 @@
+﻿@using Devnuggets.Toolkit.Mvc
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    @Html.AddCdn(new List<string>() { "jquery", "knockout", "bootstrap", "fontawesome", "datatables" }, CdnSourceType.MICROSOFT_AJAX)
+    <title>@ViewBag.Title</title>
+</head>
+<body style="margin-top: 40px;">
+    <div class="container">
+    <nav class="navbar navbar-inverse" role="navigation">
+                      <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                          </button>
+                          <a class="navbar-brand" href="#">Devnuggets</a>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
+                          <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Home</a></li>
+                          </ul>
+                        </div><!-- /.navbar-collapse -->
+                      </div><!-- /.container-fluid -->
+                    </nav>
+        </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="panel panel-default">
+                    <!-- Default panel contents -->
+                    <div class="panel-heading">Toolkit Helpers</div>
+                    <div class="panel-body">
+                    </div>
+
+                    <!-- List group -->
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="/table">Bootstrap Tables</a></li>
+                        <li class="list-group-item"><a href="/antirobot">Anti Robot</a></li>
+                        <li class="list-group-item"><a href="/cdn">CDN</a></li>
+                        <li class="list-group-item">Porta ac consectetur ac</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                @RenderBody()
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
