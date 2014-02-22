@@ -4,7 +4,7 @@ This toolkit is a collection of helper libraries for performing common tasks in 
 
 You can install from nuget using:
 
-Install-Package Devnuggets.Toolkit -Version 1.0.5
+Install-Package Devnuggets.Toolkit -Version 1.1.0
 
 Examples
 
