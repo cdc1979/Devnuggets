@@ -18,6 +18,14 @@ Checkout the Devnuggets.Samples project for some sample code.
 @Html.TableBuilder(Model, new TableOptions() { TableStyle = SetTableStyle.STRIPED, TableHover = SetTableHover.HOVER })
 </pre>
 
+###Anti Robot
+
+Add _@Html.AntiRobot()_ to your form. 
+
+Then add _[AntiRobot(5)]_ to your controller action, where the parameter is the 
+number of seconds delay to allow for the form to be submitted. (One of the ways we
+can block robots is to add a minimum delay for a form to be filled in, clearly a human will
+take longer than a few secons to fill in a form)
 
 ###SQL/MYSQL Helpers
 

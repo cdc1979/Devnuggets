@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Devnuggets.Toolkit")]
-[assembly: AssemblyDescription("Developer Toolkit")]
+[assembly: AssemblyDescription("This Developer Toolkit contains some MVC for twitter bootstrap, MongoDB, SQL helpers and AntiRobot Tools.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("N/A")]
 [assembly: AssemblyProduct("Devnuggets.Toolkit")]
