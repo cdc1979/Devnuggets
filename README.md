@@ -43,6 +43,10 @@ number of seconds delay to allow for the form to be submitted. (One of the ways 
 can block robots is to add a minimum delay for a form to be filled in, clearly a human will
 take longer than a few secons to fill in a form)
 
+The Anti Robot helper also adds a hidden "Honey Pot" field to your form, which
+is intended to remain hidden, and empty, and the form submit will fail if its not.
+i.e. a robot filled in that field automatically.
+
 ###SQL/MYSQL Helpers
 
 Simple classes for executing Raw SQL, and querying using DataSets.
