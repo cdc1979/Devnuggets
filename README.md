@@ -18,6 +18,22 @@ Checkout the Devnuggets.Samples project for some sample code.
 @Html.TableBuilder(Model, new TableOptions() { TableStyle = SetTableStyle.STRIPED, TableHover = SetTableHover.HOVER })
 </pre>
 
+-Render List of POCO Objects to Thumbnails
+
+<pre>
+    List<Thumbnail> t = new List<Thumbnail>();
+    t.Add(new Thumbnail() { Paragraph = "Test paragraph", Heading = "test"  });
+    t.Add(new Thumbnail() { Paragraph = "Test paragraph 2" });
+    t.Add(new Thumbnail() { Paragraph = "Test paragraph 3" });
+    t.Add(new Thumbnail() { Paragraph = "Test paragraph 4" });
+    t.Add(new Thumbnail() { Paragraph = "Test paragraph 5" });
+    t.Add(new Thumbnail() { Paragraph = "Test paragraph 6" });    
+</pre>
+
+<pre>
+@Html.ThumbnailBuilder(t, 4)
+</pre>
+
 ###Anti Robot
 
 Add _@Html.AntiRobot()_ to your form. 
@@ -66,5 +82,14 @@ Outputs script tags for loading common libraries e.g. jquery/knockout/bootstrap 
 Can select preferred CDN source (will revert to whatever is available if one CDN doesnt host the file)
 ####in Your MVC Razor View..
 <pre>
-@Html.AddCdn(new List<string>(){"jquery","knockout","bootstrap","fontawesome","datatables"}, CdnSourceType.MICROSOFT_AJAX));
+@Html.AddCdn("jquery","knockout","bootstrap","fontawesome","datatables"}, CdnSourceType.MICROSOFT_AJAX)
 </pre>
+
+###Utility Classes
+
+Just a set of useful static classes for repetetive work.
+
+- String Functions
+- Data Functions
+- Date Functions
+- String Extension Methods

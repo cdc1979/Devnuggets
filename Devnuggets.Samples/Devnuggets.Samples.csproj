@@ -104,6 +104,7 @@
     <Compile Include="Controllers\CdnController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\TableController.cs" />
+    <Compile Include="Controllers\ThumbnailController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -119,6 +120,7 @@
     <Content Include="Views\Table\Index.cshtml" />
     <Content Include="Views\AntiRobot\Index.cshtml" />
     <Content Include="Views\Cdn\Index.cshtml" />
+    <Content Include="Views\Thumbnails\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

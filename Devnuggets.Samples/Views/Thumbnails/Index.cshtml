@@ -1,0 +1,19 @@
+﻿@using Devnuggets.Toolkit.Mvc
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/_LayoutPage1.cshtml";
+
+    List<BootStrapButton> buttons = new List<BootStrapButton>();
+    buttons.Add(new BootStrapButton() { ButtonText = "Button", ButtonSequence = 1 });
+    
+    List<Thumbnail> t = new List<Thumbnail>();
+    t.Add(new Thumbnail() { Paragraph = "Test paragraph 1", Heading = "Test 1", buttons = buttons });
+    t.Add(new Thumbnail() { Paragraph = "Test paragraph 2", Heading = "Test 2", buttons = buttons });
+    t.Add(new Thumbnail() { Paragraph = "Test paragraph 3", Heading = "Test 3", buttons = buttons });
+    t.Add(new Thumbnail() { Paragraph = "Test paragraph 4", Heading = "Test 4", buttons = buttons });
+    t.Add(new Thumbnail() { Paragraph = "Test paragraph 5", Heading = "Test 5", buttons = buttons });
+    t.Add(new Thumbnail() { Paragraph = "Test paragraph 6", Heading = "Test 6", buttons = buttons });    
+}
+
+<h2>Thumbnails</h2>
+@Html.ThumbnailBuilder(t, 4)

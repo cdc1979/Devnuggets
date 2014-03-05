@@ -90,7 +90,13 @@ namespace Devnuggets.Toolkit.Mvc
             }
             return res.ToList();
         }
+        
+        // pass a comma seperated list
+        public static MvcHtmlString AddCdn(this HtmlHelper helper, string cdnkeys, CdnSourceType preferredSource)
+        {
+            return AddCdn(helper, cdnkeys.Split(new char[] {','}).ToList(), preferredSource);
 
+        }
         public static MvcHtmlString AddCdn(this HtmlHelper helper, List<string> cdnkeys, CdnSourceType preferredSource)
         {
             StringBuilder s = new StringBuilder();

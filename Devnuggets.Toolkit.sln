@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Devnuggets.Toolkit.MongoDb"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Devnuggets.Samples", "Devnuggets.Samples\Devnuggets.Samples.csproj", "{2C1CB49F-DF67-4D85-8EA9-8BC285C02A41}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Devnuggets.Toolkit.Utility", "Devnuggets.Toolkit.Utility\Devnuggets.Toolkit.Utility.csproj", "{AEF84D7B-6E23-4B1B-AE56-756E7746973B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{2C1CB49F-DF67-4D85-8EA9-8BC285C02A41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C1CB49F-DF67-4D85-8EA9-8BC285C02A41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C1CB49F-DF67-4D85-8EA9-8BC285C02A41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEF84D7B-6E23-4B1B-AE56-756E7746973B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEF84D7B-6E23-4B1B-AE56-756E7746973B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEF84D7B-6E23-4B1B-AE56-756E7746973B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEF84D7B-6E23-4B1B-AE56-756E7746973B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -71,6 +71,7 @@
   <ItemGroup>
     <Compile Include="AntiRobot\AntiRobot.cs" />
     <Compile Include="Bootstrap\TableHelper.cs" />
+    <Compile Include="Bootstrap\ThumbnailHelper.cs" />
     <Compile Include="CDN\CdnHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -14,7 +14,6 @@ namespace Devnuggets.Toolkit.Mvc
     public class TableOptions
     {
 
-
         public TableOptions()
         {
             EncloseWithPanel = RenderWithPanel.NONE;
@@ -44,6 +43,7 @@ namespace Devnuggets.Toolkit.Mvc
     }
     public enum BootStrapButtonSize { MINI,SMALL,NORMAL }
     public enum BootStrapButtonStyle { INFO,SUCCESS,PRIMARY,DANGER,WARNING,DEFAULT }
+
     public enum SetTableStyle { NORMAL,STRIPED }
     public enum SetTablePadding { NORMAL, CONDENSED }
     public enum SetTableHover { NOHOVER,HOVER }
